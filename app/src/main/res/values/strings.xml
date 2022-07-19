@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dice4g</string>
+    <string name="title_history">History</string>
+    <string name="title_dice">Dice</string>
+    <string name="title_profile">Profiles</string>
+    <string name="roll">Roll</string>
+</resources>
