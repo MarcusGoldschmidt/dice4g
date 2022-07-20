@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class HistoryViewModel(app: Application) : AndroidViewModel(app) {
 
-    val manager: InstanceManager = InstanceManager.getInstance(app.baseContext)
+    val manager: InstanceManager = InstanceManager.getInstance(app.applicationContext)
 
     private var _results =
         Pager(

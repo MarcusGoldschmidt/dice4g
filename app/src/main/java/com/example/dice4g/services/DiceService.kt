@@ -7,7 +7,7 @@ import com.example.dice4g.infra.models.Result
 
 class DiceService(val resultDao: ResultDao) {
     fun roll(profile: Profile, dice: DiceType = DiceType.D6): Number {
-        val diceResult = (0..dice.sizes).random()
+        val diceResult = (1..dice.sizes).random()
 
         val result = Result(
             Value = diceResult,

@@ -15,6 +15,12 @@ interface ProfileDao {
     @Query("SELECT * FROM profile WHERE name = 'Guest'")
     fun findGuest(): Profile?
 
+    @Query("SELECT * FROM profile WHERE id = :id")
+    fun findById(id: String): Profile?
+
+    @Query("SELECT COUNT(1) FROM profile")
+    fun countProfiles(): Long
+
     @Query("SELECT * FROM profile WHERE id IN (:profileIds)")
     fun loadAllByIds(profileIds: List<String>): List<Profile>
 

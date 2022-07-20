@@ -4,4 +4,7 @@
     <string name="title_dice">Dice</string>
     <string name="title_profile">Profiles</string>
     <string name="roll">Roll</string>
+    <string name="discard_profile">Discard profile?</string>
+    <string name="cancel">cancel</string>
+    <string name="remove">remove</string>
 </resources>

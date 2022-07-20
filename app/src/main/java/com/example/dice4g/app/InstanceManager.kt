@@ -15,8 +15,12 @@ class InstanceManager(context: Context) {
             context,
             AppDatabase::class.java, "dice4g"
         )
-        .allowMainThreadQueries()
-        .build()
+            .allowMainThreadQueries()
+            .build()
+    }
+
+    fun setCurrentProfile(profile: Profile) {
+        currentProfile = profile
     }
 
     fun getCurrentProfile(): Profile {
